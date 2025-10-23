@@ -5,7 +5,7 @@ const githubApiUrl = `https://api.github.com/users/${githubUsername}/repos`;
 // Inicialización
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar EmailJS
-    emailjs.init("BDgHR4jR5Crjs1kS0");
+    emailjs.init("n6d4Vs-91RMbxMJ4X");
 
     // Crear partículas animadas
     createParticles();
@@ -107,6 +107,7 @@ function setupRepositoryFilters(allRepos, container) {
     });
 }
 
+// Filtrar repositorios
 function filterRepositories(language, allRepos, container) {
     // Limpiar contenedor
     container.innerHTML = '';
@@ -281,7 +282,7 @@ function setupContactForm() {
         //console.log('Enviando email con params:', templateParams); // Para debugging
                 
         // Enviar email usando EmailJS
-        emailjs.send('service_9mnln0k', 'template_gv5enxj', templateParams)
+        emailjs.send('service_jdp3ohg', 'template_1hzdeek', templateParams)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 showNotification('¡Mensaje enviado con éxito!', 'success');

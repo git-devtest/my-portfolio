@@ -917,3 +917,10 @@ footer {
     opacity: 0;
     transform: scale(0.8);
 }
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-color);
+    font-style: italic;
+}
